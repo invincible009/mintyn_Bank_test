@@ -1,5 +1,4 @@
 
-u
-java:S3655""XCall "optionalUser.isPresent()" or "!optionalUser.isEmpty()" before accessing the value.(¸³ñ´8ÕÈ×ØÉ1
-s
-java:S1128"QRemove this unused import 'org.springframework.context.annotation.Configuration'.(¬²Úäşÿÿÿÿ8×í—ÙÉ1
+_
+java:S2094"BRemove this empty class, write its code or make it an "interface".(ÃÙïå8Î§âÉ1
+X	java:S125"<This block of commented-out lines of code should be removed.(Ğ¢¸Ó8Ï§âÉ1

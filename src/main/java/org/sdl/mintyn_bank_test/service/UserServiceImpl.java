@@ -1,17 +1,16 @@
 package org.sdl.mintyn_bank_test.service;
 
-import org.sdl.mintyn_bank_test.dto.CreateUserRequest;
-import org.sdl.mintyn_bank_test.dto.CreateUserResponse;
-import org.sdl.mintyn_bank_test.dto.LoginUserRequest;
-import org.sdl.mintyn_bank_test.dto.LoginUserResponse;
+import org.sdl.mintyn_bank_test.dto.*;
 import org.sdl.mintyn_bank_test.entity.Authority;
 import org.sdl.mintyn_bank_test.entity.User;
 import org.sdl.mintyn_bank_test.exception.UserExistException;
+import org.sdl.mintyn_bank_test.repository.AuthorityRepository;
 import org.sdl.mintyn_bank_test.repository.UserRepository;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.sql.Date;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
@@ -19,11 +18,13 @@ import java.util.Set;
 public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
-    private final PasswordEncoder encoder;
+    private final AuthorityRepository authorityRepository;
+    //private final PasswordEncoder encoder;
 
-    public UserServiceImpl(UserRepository userRepository, PasswordEncoder encoder) {
+    public UserServiceImpl(UserRepository userRepository, AuthorityRepository authorityRepository) {
         this.userRepository = userRepository;
-        this.encoder = encoder;
+        this.authorityRepository = authorityRepository;
+        //this.encoder = encoder;
     }
 
     @Override
@@ -32,10 +33,18 @@ public class UserServiceImpl implements UserService {
         user.setEmail(request.email());
         user.setFirstname(request.firstname());
         user.setLastname(request.lastname());
-        var encodedPass = encoder.encode(request.password());
-        user.setPassword(encodedPass);
+        //var encodedPass = encoder.encode(request.password());
+        user.setPassword(request.password());
         user.setCreatedAt(String.valueOf(new Date(System.currentTimeMillis())));
-        user.setAuthoritySet((Set<Authority>) request.authorities());
+
+        List<AuthorityDto> authorityDtoList = request.authorities();
+        Set<Authority> authorities = new HashSet<>();
+
+        for (AuthorityDto authorityDto : authorityDtoList) {
+            Optional<Authority> existingAuthority = authorityRepository.findAuthorityByName(authorityDto.authorityName());
+            authorities.add(existingAuthority.orElseGet(() -> new Authority(authorityDto.authorityName())));
+        }
+        user.setAuthoritySet(authorities);
         var savedUser = userRepository.saveAndFlush(user);
         return new CreateUserResponse("User registered successfully",savedUser.getId());
     }

@@ -17,6 +17,14 @@ public class Authority {
     @JoinColumn(name = "user_id")
     private User user;
 
+    public Authority() {
+
+    }
+
+    public Authority(String authorityName) {
+        this.name = authorityName;
+    }
+
     public UUID getId() {
         return id;
     }

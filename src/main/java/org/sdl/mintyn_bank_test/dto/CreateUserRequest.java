@@ -9,5 +9,5 @@ public record CreateUserRequest(String firstname,
                                 String email,
                                 String password,
                                 String username,
-                                List<Authority> authorities) {
+                                List<AuthorityDto> authorities) {
 }

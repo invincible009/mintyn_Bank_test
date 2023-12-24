@@ -1,28 +1,22 @@
 package org.sdl.mintyn_bank_test.dto;
 
-import org.springframework.http.HttpStatus;
+import com.fasterxml.jackson.annotation.JsonInclude;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class ApiResponse <T>{
-    private T data;
-    private HttpStatus httpStatus;
-    private boolean successful;
+    private T payload;
+    private boolean success;
 
-    public ApiResponse(T data, HttpStatus httpStatus, boolean successful) {
-        this.data = data;
-        this.httpStatus = httpStatus;
-        this.successful = successful;
+    public ApiResponse(boolean success, T payload ) {
+        this.success = success;
+        this.payload = payload;
     }
 
-    public T getData() {
-        return data;
+    public T getPayload() {
+        return payload;
     }
 
-    public HttpStatus getHttpStatus() {
-        return httpStatus;
+    public boolean isSuccess() {
+        return success;
     }
-
-    public boolean isSuccessful() {
-        return successful;
-    }
-
 }
