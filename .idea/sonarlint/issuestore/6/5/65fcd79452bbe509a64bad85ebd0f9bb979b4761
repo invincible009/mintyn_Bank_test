@@ -1,5 +1,7 @@
 
-]	java:S125"<This block of commented-out lines of code should be removed.(Èä½“ÿÿÿÿÿ8³¾ê½É1
-]	java:S125"<This block of commented-out lines of code should be removed.(ŸÆ½·ùÿÿÿÿ8´¾ê½É1
-O
-java:S1135"2Complete the task associated to this TODO comment.(“¬Ò®8´¾ê½É1
+r
+java:S3008"URename this field "SECRET_KEY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍïáÊ8¸áüÉ1
+|
+java:S3008"ZRename this field "EXPIRATION_TIME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘—¯¶ùÿÿÿÿ8¸áüÉ1
+M
+java:S1874 "0Remove this use of "signWith"; it is deprecated.(›ÈÚ8âñëüÉ1

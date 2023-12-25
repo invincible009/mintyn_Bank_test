@@ -23,7 +23,7 @@ public class AuthController {
     @PostMapping("/login")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<ApiResponse<?>> login(@RequestBody LoginUserRequest loginRequest) {
-        var loginUserResponse = authenticationService.generateToken(loginRequest.username(), loginRequest.password());
+        var loginUserResponse = authenticationService.authenticateUser(loginRequest);
         return ResponseEntity.ok(ApiResponse.builder().payload(loginUserResponse).success(true).build());
     }
 }
