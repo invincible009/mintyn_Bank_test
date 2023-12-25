@@ -1,5 +1,8 @@
 package org.sdl.mintyn_bank_test.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public record Payload(String bank,String scheme, String type ){
 
     public static Builder builder() {

@@ -1,5 +1,7 @@
 
-\
-java:S1128"?Remove this unused import 'jakarta.websocket.server.PathParam'.(ÇÄå¹8¢ˆÜçÉ1
-m
-java:S1128"PRemove this unused import 'org.sdl.mintyn_bank_test.dto.binlist.LookupResponse'.(œ¸¹8µğØçÉ1
+H
+java:S1452!"&Remove usage of generic wildcard type.(êÜ®ÿÿÿÿÿ8áğ˜üÉ1
+B
+java:S14522"&Remove usage of generic wildcard type.(Ú…+8ãğ˜üÉ1
+C
+java:S1452>"&Remove usage of generic wildcard type.(…‰ŸÇ8äğ˜üÉ1

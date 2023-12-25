@@ -1,3 +1,4 @@
+/Users/gabby/IdeaProjects/mintyn_Bank_test/src/main/java/org/sdl/mintyn_bank_test/dto/BinlistResponse.java
 /Users/gabby/IdeaProjects/mintyn_Bank_test/src/main/java/org/sdl/mintyn_bank_test/dto/CreateUserResponse.java
 /Users/gabby/IdeaProjects/mintyn_Bank_test/src/main/java/org/sdl/mintyn_bank_test/config/BinlistConfig.java
 /Users/gabby/IdeaProjects/mintyn_Bank_test/src/main/java/org/sdl/mintyn_bank_test/dto/binlist/Country.java
@@ -9,6 +10,8 @@
 /Users/gabby/IdeaProjects/mintyn_Bank_test/src/main/java/org/sdl/mintyn_bank_test/dto/binlist/LookupResponse.java
 /Users/gabby/IdeaProjects/mintyn_Bank_test/src/main/java/org/sdl/mintyn_bank_test/dto/LoginUserResponse.java
 /Users/gabby/IdeaProjects/mintyn_Bank_test/src/main/java/org/sdl/mintyn_bank_test/exception/UserExistException.java
+/Users/gabby/IdeaProjects/mintyn_Bank_test/src/main/java/org/sdl/mintyn_bank_test/dto/Payload.java
+/Users/gabby/IdeaProjects/mintyn_Bank_test/src/main/java/org/sdl/mintyn_bank_test/service/BinlistService.java
 /Users/gabby/IdeaProjects/mintyn_Bank_test/src/main/java/org/sdl/mintyn_bank_test/service/UserServiceImpl.java
 /Users/gabby/IdeaProjects/mintyn_Bank_test/src/main/java/org/sdl/mintyn_bank_test/http/BinlistClient.java
 /Users/gabby/IdeaProjects/mintyn_Bank_test/src/main/java/org/sdl/mintyn_bank_test/service/UserService.java

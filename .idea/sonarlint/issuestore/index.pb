@@ -65,3 +65,5 @@ n
 >src/main/java/org/sdl/mintyn_bank_test/dto/VerifyResponse.java,f/4/f46512a7f51d0a426e7a65cf01caa88049340640
 g
 7src/main/java/org/sdl/mintyn_bank_test/dto/Payload.java,9/1/913759d38b4b621b5b186c2309f2ee2b8992be4b
+o
+?src/main/java/org/sdl/mintyn_bank_test/dto/BinlistResponse.java,9/3/933f5a815fa88c25428734fca8725947e5a2e6c9

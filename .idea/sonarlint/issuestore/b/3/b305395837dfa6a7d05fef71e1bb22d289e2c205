@@ -1,0 +1,11 @@
+
+G
+java:S1874("*Remove this use of "of"; it is deprecated.(±ÔµØ8Ôß£üÉ1
+R
+java:S1874)"0Remove this use of "Bucket4j"; it is deprecated.(×ÿÒúÿÿÿÿ8Ôß£üÉ1
+Q
+java:S1874)"/Remove this use of "builder"; it is deprecated.(×ÿÒúÿÿÿÿ8Ôß£üÉ1
+\
+java:S1117+":Rename "bucket" which hides the field declared at line 15.(¶Ğ•øÿÿÿÿ8Ôß£üÉ1
+G
+java:S1068"*Remove this unused "bucket" private field.(à¶åÅ8Õß£üÉ1

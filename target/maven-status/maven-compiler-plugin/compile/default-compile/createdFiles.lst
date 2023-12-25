@@ -4,8 +4,10 @@ org/sdl/mintyn_bank_test/http/BinlistClient.class
 org/sdl/mintyn_bank_test/dto/LoginUserRequest.class
 org/sdl/mintyn_bank_test/dto/CreateUserResponse.class
 org/sdl/mintyn_bank_test/config/BinlistConfig.class
+org/sdl/mintyn_bank_test/dto/Payload.class
 org/sdl/mintyn_bank_test/service/UserServiceImpl.class
 org/sdl/mintyn_bank_test/dto/ApiResponse.class
+org/sdl/mintyn_bank_test/service/BinlistService.class
 org/sdl/mintyn_bank_test/controller/AuthController.class
 org/sdl/mintyn_bank_test/service/AuthService.class
 org/sdl/mintyn_bank_test/entity/Authority.class
@@ -16,7 +18,10 @@ org/sdl/mintyn_bank_test/dto/binlist/Number.class
 org/sdl/mintyn_bank_test/config/AppConfig.class
 org/sdl/mintyn_bank_test/exception/UserExistException.class
 org/sdl/mintyn_bank_test/service/UserService.class
+org/sdl/mintyn_bank_test/dto/BinlistResponse.class
 org/sdl/mintyn_bank_test/config/MintynBnkAuthenticationProvider.class
+org/sdl/mintyn_bank_test/dto/Payload$Builder.class
+org/sdl/mintyn_bank_test/dto/BinlistResponse$Builder.class
 org/sdl/mintyn_bank_test/controller/UserController.class
 org/sdl/mintyn_bank_test/MintynBankTestApplication.class
 org/sdl/mintyn_bank_test/dto/CreateUserRequest.class
