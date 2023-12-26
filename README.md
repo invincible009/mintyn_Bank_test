@@ -4,7 +4,6 @@ This is a demo project on how to integrate to Binlist api using springboot.
 
 # Environment Requirements
 * Java 17
-* Docker
 
 
 # How to run

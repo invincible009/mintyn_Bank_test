@@ -1,0 +1,6 @@
+
+n	java:S116"RRename this field "JWT_KEY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬¤·î8ÕŸ¬ÀÊ1
+q	java:S116"URename this field "JWT_HEADER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³™°ü8ÖŸ¬ÀÊ1
+v	java:S116"ZRename this field "EXPIRATION_TIME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡€ø8…ª’ÁÊ1
+N
+java:S1874)",Remove this use of "Date"; it is deprecated.(ÜªĞÏşÿÿÿÿ8ˆª’ÁÊ1

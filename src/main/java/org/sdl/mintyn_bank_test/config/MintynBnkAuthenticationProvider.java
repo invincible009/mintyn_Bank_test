@@ -3,7 +3,6 @@ package org.sdl.mintyn_bank_test.config;
 import org.sdl.mintyn_bank_test.entity.Authority;
 import org.sdl.mintyn_bank_test.entity.User;
 import org.sdl.mintyn_bank_test.repository.UserRepository;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

@@ -3,8 +3,6 @@
 	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 7
 pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
-f
-6src/main/java/org/sdl/mintyn_bank_test/model/User.java,9/4/943c07ee30e1e7b084be9e2222c85f51016faaec
 g
 7src/main/java/org/sdl/mintyn_bank_test/entity/User.java,b/c/bc9a31b8ed098869e5f78b27715eebc4da8a1c64
 q
@@ -33,8 +31,6 @@ o
 ?src/main/java/org/sdl/mintyn_bank_test/service/AuthService.java,0/8/08c96a9531fbaa4977de7846e1d37ceae6ef8a0b
 s
 Csrc/main/java/org/sdl/mintyn_bank_test/service/AuthServiceImpl.java,6/5/65fcd79452bbe509a64bad85ebd0f9bb979b4761
-q
-Asrc/main/java/org/sdl/mintyn_bank_test/config/SecurityConfig.java,7/d/7dad9c6a6418d3bb1a73d83e05a36822ae8025c1
 ‚
 Rsrc/main/java/org/sdl/mintyn_bank_test/config/MintynBnkAuthenticationProvider.java,9/4/94458c6cfd9b3ba3a5e1aa3c68b57235a2b76dc1
 l
@@ -61,9 +57,15 @@ n
 >src/main/java/org/sdl/mintyn_bank_test/dto/binlist/Number.java,4/e/4e907b4ca3a26b6083e22c29115497bc69939b9d
 r
 Bsrc/main/java/org/sdl/mintyn_bank_test/service/BinlistService.java,b/3/b305395837dfa6a7d05fef71e1bb22d289e2c205
-n
->src/main/java/org/sdl/mintyn_bank_test/dto/VerifyResponse.java,f/4/f46512a7f51d0a426e7a65cf01caa88049340640
 g
 7src/main/java/org/sdl/mintyn_bank_test/dto/Payload.java,9/1/913759d38b4b621b5b186c2309f2ee2b8992be4b
 o
 ?src/main/java/org/sdl/mintyn_bank_test/dto/BinlistResponse.java,9/3/933f5a815fa88c25428734fca8725947e5a2e6c9
+B
+docker-compose.yml,3/5/35b8c13cf2eb2a194eada000eb310d65aed53b2a
+4
+mvnw,5/d/5d837c4ed85ecaaf932c506e80ff5d7b9f3d590d
+|
+Lsrc/main/java/org/sdl/mintyn_bank_test/filters/JWTTokenGenerationFilter.java,c/d/cdc88def79535cdc69c76797d313cd9209e3ef01
+{
+Ksrc/main/java/org/sdl/mintyn_bank_test/filters/JWTTokenValidatorFilter.java,a/3/a31cf74aaf3e9c38b1d427c4ab39886caebf6d54

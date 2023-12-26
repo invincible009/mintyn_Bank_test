@@ -6,6 +6,7 @@ import org.sdl.mintyn_bank_test.entity.User;
 import org.sdl.mintyn_bank_test.exception.UserExistException;
 import org.sdl.mintyn_bank_test.repository.AuthorityRepository;
 import org.sdl.mintyn_bank_test.repository.UserRepository;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.sql.Date;
@@ -19,12 +20,12 @@ public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
     private final AuthorityRepository authorityRepository;
-    //private final PasswordEncoder encoder;
+    private final PasswordEncoder encoder;
 
-    public UserServiceImpl(UserRepository userRepository, AuthorityRepository authorityRepository) {
+    public UserServiceImpl(UserRepository userRepository, AuthorityRepository authorityRepository, PasswordEncoder encoder) {
         this.userRepository = userRepository;
         this.authorityRepository = authorityRepository;
-        //this.encoder = encoder;
+        this.encoder = encoder;
     }
 
     @Override
@@ -33,8 +34,8 @@ public class UserServiceImpl implements UserService {
         user.setEmail(request.email());
         user.setFirstname(request.firstname());
         user.setLastname(request.lastname());
-        //var encodedPass = encoder.encode(request.password());
-        user.setPassword(request.password());
+        var encodedPass = encoder.encode(request.password());
+        user.setPassword(encodedPass);
         user.setCreatedAt(String.valueOf(new Date(System.currentTimeMillis())));
 
         List<AuthorityDto> authorityDtoList = request.authorities();
