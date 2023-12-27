@@ -24,11 +24,11 @@ public class AuthController {
 
     private AuthenticationManager authenticationManager;
 
-    @Autowired
     private JwtUtil jwtUtil;
 
     public AuthController(AuthServiceImpl authenticationService) {
         this.authenticationService = authenticationService;
+        this.jwtUtil = new JwtUtil();
     }
 
     @PostMapping("/login")
