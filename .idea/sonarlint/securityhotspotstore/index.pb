@@ -69,3 +69,9 @@ B
 Lsrc/main/java/org/sdl/mintyn_bank_test/filters/JWTTokenGenerationFilter.java,c/d/cdc88def79535cdc69c76797d313cd9209e3ef01
 {
 Ksrc/main/java/org/sdl/mintyn_bank_test/filters/JWTTokenValidatorFilter.java,a/3/a31cf74aaf3e9c38b1d427c4ab39886caebf6d54
+c
+3src/main/java/org/sdl/mintyn_bank_test/JwtUtil.java,1/1/11ef3ca87e4be88d1c2ed2a237d098a8b2007370
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8/8/88a9255124c95bdc913197c120a8d560edc59c8e
+S
+#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
